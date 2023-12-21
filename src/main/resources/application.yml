@@ -1,0 +1,11 @@
+#配置rabbitMQ
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    virtual-host: /zed
+    username: 257
+    password: 257
+    listener:
+      direct:
+        prefetch: 1 #每次只能取一条
